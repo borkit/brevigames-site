@@ -1,0 +1,104 @@
+/* Brevi Games site: the slate palette from the games' token set. */
+:root {
+  --bg-top: #1b1f2a;
+  --bg-bottom: #12151d;
+  --panel: #232836;
+  --panel-line: #333a4c;
+  --text: #e8eaf0;
+  --text-dim: #a4abbd;
+  --accent: #e0a44a;
+  --accent-pressed: #c98c33;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 16px;
+  background: linear-gradient(var(--bg-top), var(--bg-bottom)) fixed;
+  color: var(--text);
+  font: 17px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+header { margin-bottom: 2.5rem; }
+
+h1 {
+  margin: 0 0 .4rem;
+  font-size: 2.4rem;
+  letter-spacing: .01em;
+}
+
+h2 {
+  margin: 2.2rem 0 .6rem;
+  font-size: 1.15rem;
+  color: var(--accent);
+  letter-spacing: .02em;
+}
+
+h3 {
+  margin: 1.6rem 0 .4rem;
+  font-size: 1rem;
+}
+
+.lead { color: var(--text-dim); font-size: 1.1rem; margin: 0; }
+
+/* Holding page: name, one line, contact — centred in the viewport. */
+.holding {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.holding h1 { font-size: 3rem; }
+.holding .lead { font-size: 1.25rem; letter-spacing: .04em; }
+.holding footer { margin-top: 4rem; }
+
+p, li { color: var(--text); }
+
+section {
+  background: var(--panel);
+  border: 1px solid var(--panel-line);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0;
+}
+
+section h2:first-child { margin-top: 0; }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-pressed); }
+
+code {
+  background: #1a1e28;
+  border: 1px solid var(--panel-line);
+  border-radius: 5px;
+  padding: .1rem .35rem;
+  font-size: .92em;
+}
+
+ul { padding-left: 1.2rem; }
+li { margin: .3rem 0; }
+
+footer {
+  margin-top: 2.5rem;
+  color: var(--text-dim);
+  font-size: .92rem;
+}
+
+.updated { color: var(--text-dim); font-size: .92rem; }
+
+@media (max-width: 480px) {
+  main { padding-top: 2rem; }
+  h1 { font-size: 1.9rem; }
+  body { font-size: 16px; }
+}

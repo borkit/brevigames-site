@@ -1,0 +1,14 @@
+# This repository is public and holds the published pages only. No credentials, no notes, no
+# tooling: anything of ours goes in the private repository instead.
+.local/
+.env*
+*.env
+*.token
+*.key
+*.pem
+
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*~
